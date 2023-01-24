@@ -23,7 +23,7 @@
           
         }
         function GetMovies(){
-            return   "Nome:".$this->nome ."<br>"."Genere:".$this->genere ."<br>"."Anno di Produzione". $this->anno;
+            return   "Nome:".$this->nome ."<br>"."Genere:".$this->genere ."<br>"."Anno di Produzione:". $this->anno;
                 
                
            
@@ -40,7 +40,7 @@
      new Movies("Star Wars:Una nuova speranza", "Sci-fi", 1976)];
     
     foreach ($movies as $movie){
-        echo $movie->GetMovies();
+        echo "<div>" . $movie->GetMovies() . "</div>";
     }
 
     
